@@ -71,7 +71,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (smex ido-vertical-mode solarized-theme which-key exwm yasnippet-snippets powerline evil auto-complete-auctex auto-complete latex-preview-pane flycheck company smartparens djvu langtool flyspell-correct zone-nyan google-translate nyan-mode org-bullets emms pdf-tools magit auctex-latexmk julia-repl)))
+    (avy smex ido-vertical-mode solarized-theme which-key exwm yasnippet-snippets powerline evil auto-complete-auctex auto-complete latex-preview-pane flycheck company smartparens djvu langtool flyspell-correct zone-nyan google-translate nyan-mode org-bullets emms pdf-tools magit auctex-latexmk julia-repl)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(shift-select-mode nil)

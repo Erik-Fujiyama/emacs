@@ -155,3 +155,20 @@
 :init
 (ido-vertical-mode 1))
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(use-package avy
+  :ensure t
+  :bind
+  ("M-s" . avy-goto-char))
+
+(defun config-visit ()
+  (interactive)
+  (find-file "~/.emacs.d/config.org"))
+(global-set-key (kbd "C-c e") 'config-visit)
+
+(defun config-reload ()
+  (interactive)
+  (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
+(global-set-key (kbd "C-c r") 'config-reload)
