@@ -240,3 +240,11 @@
     (setq dashboard '((recents .10)))
     (setq dashboard-banner-logo-title "Hell Erik"))
 #+end_src
+* Company
+#+begin_src emacs-lisp
+  (use-package company
+    :ensure t
+    :init
+    (add-hook 'after-init-hook 'global-company-mode))
+
+#+end_src

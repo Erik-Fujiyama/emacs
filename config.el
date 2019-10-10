@@ -193,3 +193,8 @@
   (dashboard-setup-startup-hook)
   (setq dashboard '((recents .10)))
   (setq dashboard-banner-logo-title "Hell Erik"))
+
+(use-package company
+  :ensure t
+  :init
+  (add-hook 'after-init-hook 'global-company-mode))
