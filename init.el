@@ -61,9 +61,7 @@
  '(nrepl-message-colors
    (quote
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
- '(org-agenda-files
-   (quote
-    ("~/Dropbox/Org/Estudos.org" "~/Dropbox/Help/test.org")))
+ '(org-agenda-files (quote ("~/Dropbox/Org/Estudos.org")))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
@@ -71,7 +69,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (avy smex ido-vertical-mode solarized-theme which-key exwm yasnippet-snippets powerline evil auto-complete-auctex auto-complete latex-preview-pane flycheck company smartparens djvu langtool flyspell-correct zone-nyan google-translate nyan-mode org-bullets emms pdf-tools magit auctex-latexmk julia-repl)))
+    (dashboard switch-window avy smex ido-vertical-mode solarized-theme which-key exwm yasnippet-snippets powerline evil auto-complete-auctex auto-complete latex-preview-pane flycheck company smartparens djvu langtool flyspell-correct zone-nyan google-translate nyan-mode org-bullets emms pdf-tools magit auctex-latexmk julia-repl)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(shift-select-mode nil)
@@ -167,3 +165,9 @@
 (global-prettify-symbols-mode t)
 (use-package org-tempo)
 (org-babel-load-file (expand-file-name "~/.emacs.d/config.org"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 128 :width normal :foundry "PfEd" :family "DejaVu Sans Mono")))))

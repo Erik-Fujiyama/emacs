@@ -1,4 +1,4 @@
-* Appearance
+* Minor settings
 ** General
 #+begin_src emacs-lisp
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -47,22 +47,24 @@
 #+end_src
 * Google translate
 #+BEGIN_SRC emacs-lisp
-   ;;google translate
-   (require 'google-translate)
-   (require 'google-translate-default-ui)
-   (global-set-key "\C-ct" 'google-translate-at-point)
-   (global-set-key "\C-cT" 'google-translate-query-translate)
-   (global-set-key (kbd "C-c r") 'google-translate-at-point-reverse) (global-set-key (kbd "C-c R") 'google-translate-query-translate-reverse)
-   (defun pdf-google-translate()
-     (interactive)
-     (google-translate-translate
-      google-translate-default-source-language
-      google-translate-default-target-language
-      (pdf-view-kill-ring-save)
-      )
+    (use-package google-translate
+      :ensure t
+      :init)
+  (require 'google-translate)
+  (require 'google-translate-default-ui)
+  (global-set-key "\C-ct" 'google-translate-at-point)
+  (global-set-key "\C-cT" 'google-translate-query-translate)
+  (global-set-key (kbd "C-c r") 'google-translate-at-point-reverse) (global-set-key (kbd "C-c R") 'google-translate-query-translate-reverse)
+  (defun pdf-google-translate()
+    (interactive)
+    (google-translate-translate
+     google-translate-default-source-language
+     google-translate-default-target-language
+     (pdf-view-kill-ring-save)
      )
+    )
 
-   (define-key pdf-view-mode-map (kbd "C-c t") 'pdf-google-translate)
+  (define-key pdf-view-mode-map (kbd "C-c t") 'pdf-google-translate)
 
 #+END_SRC
 * Julia
@@ -214,4 +216,27 @@
     (interactive)
     (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
   (global-set-key (kbd "C-c r") 'config-reload)
+#+end_src
+* Switch-window
+#+begin_src emacs-lisp
+  (use-package switch-window
+    :ensure t
+    :config
+    (setq switch-window-input-style 'minibuffer)
+    (setq switch-window-increase 4)
+    (setq switch-window-threshold 2)
+    (setq switch-window-shortcut-style 'qwerty)
+    (setq switch-window-qwerty-shortcuts
+          '("a" "s" "d" "f" "g" "j" "k" "l"))
+    :bind
+    ([remap other-window] . switch-window))
+#+end_src
+* Dashboard
+#+begin_src emacs-lisp
+  (use-package dashboard
+    :ensure t
+    :config
+    (dashboard-setup-startup-hook)
+    (setq dashboard '((recents .10)))
+    (setq dashboard-banner-logo-title "Hell Erik"))
 #+end_src

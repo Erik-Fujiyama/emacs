@@ -36,7 +36,9 @@
 ;; turn off cua so copy works
 (add-hook 'pdf-view-mode-hook (lambda () (cua-mode 0)))
 
-;;google translate
+(use-package google-translate
+    :ensure t
+    :init)
 (require 'google-translate)
 (require 'google-translate-default-ui)
 (global-set-key "\C-ct" 'google-translate-at-point)
@@ -172,3 +174,22 @@
   (interactive)
   (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
 (global-set-key (kbd "C-c r") 'config-reload)
+
+(use-package switch-window
+  :ensure t
+  :config
+  (setq switch-window-input-style 'minibuffer)
+  (setq switch-window-increase 4)
+  (setq switch-window-threshold 2)
+  (setq switch-window-shortcut-style 'qwerty)
+  (setq switch-window-qwerty-shortcuts
+        '("a" "s" "d" "f" "g" "j" "k" "l"))
+  :bind
+  ([remap other-window] . switch-window))
+
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook)
+  (setq dashboard '((recents .10)))
+  (setq dashboard-banner-logo-title "Hell Erik"))

@@ -1,0 +1,46 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/erik/Drive/Deutsch/DAF/" . "Schreiben/")
+ ("/home/erik/Drive/" . "Deutsch/")
+ ("/home/erik/" . "Drive/")
+ ("/home/erik/Drive/Deutsch/" . "DAF/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/erik/.emacs.d/"
+ "/home/erik/Drive/Deutsch/"
+ "/home/erik/Drive/Deutsch/DAF/Schreiben/"
+ "/home/erik/Drive/Deutsch/DAF/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "config.org"
+ "init.el"
+ "sketches.org"
+ "mp3.jpg"
+ "Antwortblatt.pdf"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/erik/.emacs.d/" (23967 42530 554437 99000) "games/" "evil/" "session.104eb66117346f7572156019706124049700000058850096" ".git/" "bookmarks" "../" "emms/" "ac-comphist.dat" "url/" "elpa/" "org-gcal/" "./" ".org-id-locations" "config.org~" "transient/" "diary" "init.el~" "auto-save-list/" "eshell/" "ido.last" "config.el" "init.el" "snippets/" "request/" "config.org" ".gitmodules" "ido.last~")
+
+ ("/home/erik/Drive/Deutsch/DAF/Schreiben/" (23967 29923 886073 30000) "praktikum.tex~" "schreibe2.org" "praktikum.org" "schule.pdf" "schule.tex" "sketches.org~" "praktikum.org~" "schule.org" "studium_revised.org" "schreibe2_revised.org" "../" "Surfen.org" "verpackung.pdf" "verpackung.tex" "praktikum.pdf" "./" "studium.org" "verpackung.org~" "schule.org~" "schreibe.org" "schreibe_revised.org" "praktikum.tex" "auto/" "sketches.org" "verpackung.org")
+
+ ("/home/erik/Drive/Deutsch/DAF/" (23967 29638 565266 562000) "Fit_fur_den_Test_DaF_Losungen.pdf" "kannbeschreibungen_por.pdf" "Prova2 - print.pdf" "Carola Heine_ Elisabeth Lazarou - Prüfungstraining DaF_ B2-C1 - TestDaF_ Übungsbuch mit autorisiertem Modelltest und CDs (AUDIO CD 1 & 2)-Cornelsen Verlag (2007)/" "transkription 2.protected-unlocked.pdf" "Fit.org" "Carola Heine_ Elisabeth Lazarou - Prüfungstraining DaF_ B2-C1 - TestDaF_ Transkriptionen, Lösungen-Cornelsen (2008).pdf" "Ksenija Fazlic-Walter_ Wolfgang Wegner - Mit Erfolg zum TestDaF B2-C1_ Übungs- und Testbuch inklusive 2 Audio-CDs-Ernst Klett Sprachen (2009).pdf" "Training.org" "600px-Medienverhalten_Jugendliche.jpg" "../" "transkript_1.protected-unlocked.pdf" "Training.org~" "Erfolg.org" "Ksenija Fazlic-Walter_ Wolfgang Wegner - Mit Erfolg zum TestDaF B2-C1_ Übungs- und Testbuch inklusive 2 Audio-CDs (AUDIO CD 1 & 2)-Ernst Klett Sprachen (2009) (1)/" "Fit_fur_den_Test_DaF_Teil_2.pdf" "Prova1.org" "./" "mp3.jpg" "kupdf.net_mit-erfolg-zum-testdaf.pdf" "Jörg Roche - Fit für den TestDaF_ Tipps und Übungen. Deutsch als Fremdsprache (AUDIO CD 1 & 2)-Hueber Verlag (2005)/" "Prova1.org~" "informationen_por.pdf" "Antwortblatt.pdf" "auto/" "Test DAF.pdf" "Prova1 - print.pdf" "Wahl.pdf" "redemittel.org" "Erfolg.org~" "Fit.org~" "Schreiben/" "Fit_f_den_Test_DaF_Teil_1-rotated.pdf" "Carola Heine_ Elisabeth Lazarou - Prüfungstraining DaF_ B2-C1 - TestDaF_ Übungsbuch mit autorisiertem Modelltest und CDs-Cornelsen Verlag (2007).pdf")
+
+ ("/home/" (23536 36856 374861 123000) "../" "iracema/" "erik/" "./")
+
+ ("/home/erik/Drive/Deutsch/" (23965 50507 772572 5000) "präsentation.org~" "Listen/" "#fit#" "#temeraire.org#" "animal_farm.org" "wortschatz.txt" "Sicher_C1.2_AB_Transkriptionen.pdf" "erfindung.org~" "../" "kurzgeschichte.org" "temeraire.odt" "edoc.site_sicher-c12.pdf" "Marija/" "kinderlose.org~" "Die Entdeckung der Currywurst.cbr" "animal_farm.org~" "Sicher_C1.2_AB_Loesungen.pdf" "Timm, Uwe - Die Entdeckung der Currywurst.pdf" "./" "wortschatz.txt~" "temeraire.org" "Sicher_C1.1_AB_Loesungen.pdf" "kurzgeschichte.pdf" "a2289d0ae86dd7637a01ee05df2fa9b2.jpg" "temeraire.org~" "kurzgeschichte.odt" "präsentation.org" "kurzgeschichte.org~" "Grammatik/" "erfindung.org" "temeraire.tex~" "kinderlose.org" "temeraire.tex" "auto/" "DAF/" "Corrected/" ".inputrc" "Goehte_Zertifikat/" "temeraire.pdf")
+
+ ("/home/erik/Drive/" (23940 4685 428829 432000) "Depenbusch/" "Contorno/" "../" "PG/" "Cambridge/" "1967 - In Deutschland/" "1970 - Traume/" "Deutsch/" "Videos/" "Documentos/" "Insta 2/" "./" "Classroom/" "Medical/" "Compositos/" "Insta 1/" "Testing_programs/")
+
+ ("/home/erik/" (23967 7501 837789 814000) ".spack/" "encrypt.c~" ".inputrc~" "Music/" ".viminfo" ".cinnamon/" ".offlineimaprc" "snap/" "eclipse/" ".python_history" "mu/" "fasdkjkçdsfa" "spack/" "bin/" "anaconda3/" "#sda#" "Modelo_PG_Mansour/" ".bashrc-anaconda3.bak" "functions.jl~" ".themes/" ".goldendict/" ".gnupg/" "writing.pdf" "doxygen/" "writing.tex" "nano.save" ".npm/" "Deutsch Serien/" ".mozilla/" "Downloads/" ".emacs.d/" ".gnome/" "pCloudDrive/" ".pki/" ".pcloud/" "examples.desktop" ".conda/" "../" ".audacity-data/" "Dropbox/" "#test.org#" "Public/" ".QtWebEngineProcess/" "Mastering the Vim Language-wlR5gYd6um0.f248.webm.part" ".octave_packages" "'Young and Beautiful' but you are in a bathroom at a party-duQ0CF6YfsE.f135.mp4.part" ".gitconfig" "teste.txt" "octave/" "launch.sh~" ".pam_environment" "vimrc" ".arduino/" "eclipse-workspace/" ".ICEauthority" "teste.cc" ".dropbox/" "fasdkjkçdsfa~" "deslx_an.m" "Videos/" ".bash_history" "octave-workspace" "Zoho WorkDrive (Erik's work)/" "git/" "Documents/" ".octave_hist" "adf.jl" "Calibre Library/" "Fit" "./" "piping.jl~" "julia-0.7.0/" ".bash_logout" ".ipython/" ".wget-hsts" ".eclipse/" ".notes" ".rubberband.wisdom.d" ".texlive2017/" "sketchbook/" ".FreeCAD/" ".local/" ".mpd/" ".cache/" "#teste.jl#" ".zohoworkdrive/" ".thunderbird/" ".bashrc~" "untitled.geo" "Pictures/" ".bashrc.bkup" ".profile" ".vim/" "MPD" ".smex-items" "sdlakjç" "#.emacs#" ".icons/" ".ssh/" ".bashrc" ".dropbox-dist/" "adf.jl~" "teste.cc~" "writing.org~" ".config/" "#config.org#" "teste.cpp~" ".xinputrc" ".sudo_as_admin_successful" "vacro.txt" "Desktop/" "Dictionaries/" "auto/" ".julia/" ".dbus/" "Music with Emacs - mpd and EMMS!-xTVN8UDScqk.mkv" "Drive/" "Gmail/" "Templates/" ".gmshrc" ".lesshst" "Math/" ".swt/" "teste.txt~" ".notes~" ".rpmdb/" "teste.cpp" ".inputrc" ".condarc" ".mixxx/" ".vimrc" "'Young and Beautiful' but you are in a bathroom at a party-duQ0CF6YfsE.f135.mp4.ytdl" ".java/" ".jupyter/" ".p2/" ".gnuplot_history" ".anaconda/" ".offlineimaprc~" "vim_strace" "helloworld.tex~" ".gconf/" ".offlineimap/" ".gmsh-options" ".gimp-2.8/" ".emacs~" "writing.org" "writing.odt" ".gphoto/" ".fltk/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
