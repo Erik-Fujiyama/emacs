@@ -2,7 +2,8 @@
   (tool-bar-mode -1)
   (menu-bar-mode -1)
   (scroll-bar-mode -1)
-  (global-linum-mode t)
+(global-linum-mode t)
+(nyan-mode t)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -146,6 +147,8 @@
 (setq reftex-ref-macro-prompt nil)
 ;; Activate nice interface between RefTeX and AUCTeX
 (setq reftex-plug-into-AUCTeX t)
+(use-package latex-preview-pane
+  :ensure t)
 
 (setq ido-enable-flex-matching nil)
 (setq ido-create-new-buffer 'always)
@@ -192,9 +195,43 @@
   :config
   (dashboard-setup-startup-hook)
   (setq dashboard '((recents .10)))
-  (setq dashboard-banner-logo-title "Hell Erik"))
+  (setq dashboard-banner-logo-title "Hello Erik"))
 
 (use-package company
   :ensure t
-  :init
-  (add-hook 'after-init-hook 'global-company-mode))
+  :config
+  (setq company-idle-delay 0)
+  :init)
+
+;; (with-eval-after-load 'company
+;;   (define-key company-active-map (kbd "C-n") #'company-select-next)
+;;   (define-key company-active-map (kbd "C-p") #'company-select-previous))
+
+;; (use-package company-irony
+;;   :ensure t
+;;   :config
+;;   (require 'company)
+;;   (add-to-list 'company-backends 'company-irony))
+
+;; (use-package irony
+;;   :ensure t
+;;   :config
+;;   (add-hook 'c++-mode-hook 'irony-mode)
+;;   (add-hook 'c-mode-hook 'irony-mode)
+;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options))
+
+;; (with-eval-after-load 'company
+;;   (add-hook 'c++-mode-hook 'company-mode)
+;;   (add-hook 'c-mode-hook 'company-mode))
+
+(global-set-key (kbd "<f5>") 'set-selective-display-dlw)
+
+(defun set-selective-display-dlw (&optional level)
+"Fold text indented same of more than the cursor.
+If level is set, set the indent level to LEVEL.
+If 'selective-display' is already set to LEVEL, clicking
+F5 again will unset 'selective-display' by setting it to 0."
+  (interactive "P")
+  (if (eq selective-display (1+ (current-column)))
+      (set-selective-display 0)
+    (set-selective-display (or level (1+ (current-column))))))
