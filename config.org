@@ -68,6 +68,13 @@
   (define-key pdf-view-mode-map (kbd "C-c t") 'pdf-google-translate)
 
 #+END_SRC
+* ESS
+#+begin_src emacs-lisp
+  (use-package ess
+    :ensure t
+    :init)
+  (require 'ess-site)
+#+end_src
 * Julia
 #+begin_src emacs-lisp
   (add-to-list 'load-path "/home/erik/Downloads/julia-emacs-master (1)/julia-emacs-master")
@@ -76,6 +83,7 @@
   (add-to-list 'load-path "/home/erik/Downloads/julia-repl-master")
   (require 'julia-repl)
   (add-hook 'julia-mode-hook 'julia-repl-mode) ;; always use minor mode
+  (load "/home/erik/.emacs.d/ob-julia-master/ob-julia.el")
 #+end_src
 * Magit
 #+begin_src emacs-lisp
@@ -286,4 +294,13 @@
     (if (eq selective-display (1+ (current-column)))
         (set-selective-display 0)
       (set-selective-display (or level (1+ (current-column))))))
+#+end_src
+* Twittern
+#+begin_src emacs-lisp
+  (use-package twittering-mode
+    :ensure t)
+#+end_src
+* Org-Latex
+#+begin_src emacs-lisp
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.5))
 #+end_src
