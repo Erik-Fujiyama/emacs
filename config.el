@@ -56,12 +56,18 @@
 
 (define-key pdf-view-mode-map (kbd "C-c t") 'pdf-google-translate)
 
+(use-package ess
+  :ensure t
+  :init)
+(require 'ess-site)
+
 (add-to-list 'load-path "/home/erik/Downloads/julia-emacs-master (1)/julia-emacs-master")
 (require 'julia-mode)
 
 (add-to-list 'load-path "/home/erik/Downloads/julia-repl-master")
 (require 'julia-repl)
 (add-hook 'julia-mode-hook 'julia-repl-mode) ;; always use minor mode
+(load "/home/erik/.emacs.d/ob-julia-master/ob-julia.el")
 
 (setq package-check-signature nil)
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -235,3 +241,23 @@ F5 again will unset 'selective-display' by setting it to 0."
   (if (eq selective-display (1+ (current-column)))
       (set-selective-display 0)
     (set-selective-display (or level (1+ (current-column))))))
+
+(use-package twittering-mode
+  :ensure t)
+
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.5))
+
+(use-package elpy
+  :ensure t)
+  ;; Enable elpy
+  (elpy-enable)
+  (setq elpy-rpc-virtualenv-path 'current)
+  ;; Enable Flycheck
+  (when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+  (use-package py-autopep8
+  :ensure t)
+  ;; Enable autopep8
+(require 'py-autopep8)
+(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)

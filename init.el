@@ -61,7 +61,9 @@
  '(nrepl-message-colors
    (quote
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
- '(org-agenda-files (quote ("~/Dropbox/Org/Estudos.org")))
+ '(org-agenda-files
+   (quote
+    ("~/Dropbox/Org/Tasks.org" "~/Dropbox/Org/Estudos.org")))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
@@ -69,7 +71,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (company-irony dashboard switch-window avy smex ido-vertical-mode solarized-theme which-key exwm yasnippet-snippets powerline evil auto-complete-auctex auto-complete latex-preview-pane flycheck company smartparens djvu langtool flyspell-correct zone-nyan google-translate nyan-mode org-bullets emms pdf-tools magit auctex-latexmk julia-repl)))
+    (python-black py-autopep8 blacken pyenv_mode r pyenv-mode elpy ess ess-site ob-julia company-irony dashboard switch-window avy smex ido-vertical-mode solarized-theme which-key exwm yasnippet-snippets powerline evil auto-complete-auctex auto-complete latex-preview-pane flycheck company smartparens djvu langtool flyspell-correct zone-nyan google-translate nyan-mode org-bullets emms pdf-tools magit auctex-latexmk julia-repl)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(shift-select-mode nil)
